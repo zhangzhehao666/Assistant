@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_1"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/menu_information"
+            android:icon="@drawable/menu_information"
+            android:title="个人资料" />
+
+        <item
+            android:id="@+id/menu_theme"
+            android:icon="@drawable/nav_theme"
+            android:title="主题中心" />
+
+        <item
+            android:id="@+id/menu_tools"
+            android:icon="@drawable/menu_tools"
+            android:title="小工具" />
+    </group>
+    <group
+        android:id="@+id/group_2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/menu_logout"
+            android:title="切换帐号" />
+    </group>
+</menu>

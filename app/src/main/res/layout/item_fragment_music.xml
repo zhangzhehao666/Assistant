@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/music_head_tv"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="?attr/divider"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/grey700"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/music_small"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/album" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/music_song_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:text="music name "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/music_sing_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:maxLines="1"
+                android:text="singer name "
+                android:textColor="@color/grey700"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/music_menu"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:src="@drawable/never_menu" />
+    </LinearLayout>
+</LinearLayout>

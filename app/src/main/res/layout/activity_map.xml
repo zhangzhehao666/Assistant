@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/map_re">
+
+    </com.baidu.mapapi.map.MapView>
+
+    <RelativeLayout
+        android:id="@+id/map_re"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/map_edit"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_edit_radius"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/map_send"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/map_edit"
+            android:text="出发"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/map_Reset"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/map_send"
+            android:text="复位"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

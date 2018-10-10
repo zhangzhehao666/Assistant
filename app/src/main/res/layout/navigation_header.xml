@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@drawable/bg_borde_bottomr">
+
+    <ImageView
+        android:id="@+id/navigation_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/navigation_re"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.zzh.assistant.views.CircleImageView
+                android:id="@+id/img_navigation_header"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:background="@color/Transparency"
+                android:src="@drawable/default_img" />
+
+            <TextView
+                android:id="@+id/txt_navigation_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/img_navigation_header"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/navigation_re1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navigation_re">
+
+            <RelativeLayout
+                android:id="@+id/navigation_re2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/navigation_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前积分："
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/navigation_level_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/navigation_level"
+                    android:text="0"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navigation_re2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/navigation_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="称号："
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/navigation_label_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/navigation_label"
+                    android:text="无"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/navigation_btn_sign"
+                android:layout_width="90dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_radius_sign"
+                android:text="马上签到"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/navigation_point"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/navigation_re1"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>
